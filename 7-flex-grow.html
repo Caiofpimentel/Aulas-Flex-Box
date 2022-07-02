@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>fundamentos - flex grow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+.container{
+    display: flex;
+    border: 2px solid black;
+    max-width: 400px;
+
+}
+.item{
+    background-color: orangered;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.fg-0{
+    flex-grow: 0;
+}
+.fg-1{
+    flex-grow: 1;
+}
+.fg-2{
+    flex-grow: 2;
+}
+.fg-3{
+    flex-grow: 3;
+}
+    </style>
+</head>
+<body>
+    <P>FLEX GROW 0</P>
+    <div class="container">
+        <div class="item fg-0">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+    <P>FLEX GROW 1</P>
+    <div class="container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+    <P>FLEX GROW 2</P>
+    <div class="container">
+        <div class="item fg-0">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-2">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+  
+    
+</body>
+</html>
